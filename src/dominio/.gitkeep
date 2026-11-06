@@ -1,0 +1,5 @@
+git init
+git add.
+git commit -m "Inicio del proyecto Mi Ludoteca"
+git branch -M main
+git remote add origin https://github.com/BorjaRozalen/mi-ludoteca--programacion-i.git
