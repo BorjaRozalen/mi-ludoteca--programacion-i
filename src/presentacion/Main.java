@@ -1,7 +1,6 @@
 package presentacion;
+import dominio.*;
 
-import dominio.Ludoteca;
-import dominio.Videojuego;
 
 public class Main {
 
@@ -13,16 +12,16 @@ public class Main {
             1, "Minecraft", "PC", 90, 120
         );
 
-        Videojuego juego2 = new Videojuego(
-            2, "Mario Kart 8 Deluxe", "Nintendo Switch", 95, 60
+        VideojuegoRoll juego2 = new VideojuegoRoll(
+            2, "Mario Kart 8 Deluxe", "Nintendo Switch", 95, 60, 50
         );
 
-        Videojuego juego3 = new Videojuego(
-            3, "God of War", "PS4", 94, 35
+        VideojuegoDeportivo juego3 = new VideojuegoDeportivo (
+            3, "God of War", "PS4", 94, 35, "Lucha"
         );
 
-        Videojuego juego4 = new Videojuego(
-            4, "Halo Infinite", "Xbox Series X", 85, 40
+        VideojuegoEstrategia juego4 = new VideojuegoEstrategia(
+            4, "Halo Infinite", "Xbox Series X", 85, 40, 20
         );
 
         Videojuego juego5 = new Videojuego(

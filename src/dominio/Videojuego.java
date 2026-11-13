@@ -2,11 +2,11 @@ package dominio;
 
 public class Videojuego {
 
-    private int codigo;
-    private String titulo;
-    private String plataforma;
-    private int puntuacion;
-    private int horasJugadas;
+    protected int codigo;
+    protected String titulo;
+    protected String plataforma;
+    protected int puntuacion;
+    protected int horasJugadas;
 
     public Videojuego(int codigo, String titulo, String plataforma,
                       int puntuacion, int horasJugadas) {
@@ -16,6 +16,9 @@ public class Videojuego {
         setPuntuacion(puntuacion);
         setHorasJugadas(horasJugadas);
     }
+
+    public Videojuego(){}
+
 
     public int getCodigo() {
         return codigo;
