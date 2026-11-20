@@ -1,6 +1,5 @@
 package dominio;
 
-public class VideojuegoDeportivo {
 
     public class VideojuegoDeportivo extends Videojuego {
 
@@ -13,7 +12,7 @@ public class VideojuegoDeportivo {
                 this.plataforma = plataforma;
                 this.puntuacion = puntuacion;
                 this.horasJugadas = horasJugadas;
-              this.deporte = deporte;  
+                this.deporte = deporte;  
         }
 
         public String getDeporte() {
@@ -24,5 +23,5 @@ public class VideojuegoDeportivo {
 
         }
     }
-}
+
         

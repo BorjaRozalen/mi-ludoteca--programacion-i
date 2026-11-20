@@ -102,4 +102,8 @@ public class Videojuego {
     public int hashCode() {
         return Integer.hashCode(codigo);
     }
+
+    public String mostrarFicha() {
+        return(toString());
+    }
 }

@@ -12,9 +12,7 @@ public class Ludoteca {
 
     public void agregar(Videojuego videojuego) {
         if (videojuego == null) {
-            throw new IllegalArgumentException(
-                "El videojuego no puede ser null."
-            );
+              System.out.println("El videojuego no puede ser null.");
         }
 
         videojuegos.add(videojuego);
@@ -42,6 +40,34 @@ public class Ludoteca {
     }
 
     public void listar() {
-        System.out.print(this);
+        for(Videojuego videojuego : videojuegos){
+             System.out.println(videojuego.mostrarFicha());
+        }
     }
+
+    public double calcularPuntuacionMedia() {
+    if (!videojuegos.isEmpty()) {
+        double suma = 0;
+        for (Videojuego videojuego : videojuegos) {
+            suma += videojuego.getPuntuacion();
+        }
+        return suma / videojuegos.size();
+    }
+    return 0;
 }
+
+public Videojuego obtenerMejorValorado() {
+    if (!videojuegos.isEmpty()) {
+        Videojuego mejor = videojuegos.get(0);
+
+        for (Videojuego videojuego : videojuegos) {
+            if (mejor.getPuntuacion() < videojuego.getPuntuacion()) {
+                mejor = videojuego;
+            }
+        }
+        return mejor;
+    }
+    return null;
+}
+
+    }
